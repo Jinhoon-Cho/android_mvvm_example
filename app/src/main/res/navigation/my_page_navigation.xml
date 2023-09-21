@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_page_navigation"
+    app:startDestination="@id/firstPageFragment">
+
+    <fragment
+        android:id="@+id/firstPageFragment"
+        android:name="com.example.myapplication.FirstPageFragment"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" >
+
+        <action
+            android:id="@+id/action_firstPageFragment_to_secondPageFragment"
+            app:destination="@id/secondPageFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondPageFragment"
+        android:name="com.example.myapplication.SecondPageFragment"
+        android:label="fragment_second_page"
+        tools:layout="@layout/fragment_second_page">
+
+        <argument
+            android:name="second_page_message"
+            android:defaultValue="test!!!"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
