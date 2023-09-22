@@ -3,4 +3,6 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello first blank fragment</string>
     <string name="hello_second_fragment">Hello second blank fragment</string>
+    <string name="hello">hello</string>
+    <string name="login">login</string>
 </resources>

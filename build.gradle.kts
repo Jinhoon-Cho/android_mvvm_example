@@ -6,13 +6,13 @@ plugins {
     id("androidx.navigation.safeargs.kotlin") version "2.7.3" apply false
 }
 
-//buildscript {
-//    repositories {
-//        google()
-//        mavenCentral()
-//        maven {
-//            url = uri("https://storage.googleapis.com/r8-releases/raw")
-//        }
-//    }
-//}
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://storage.googleapis.com/r8-releases/raw")
+        }
+    }
+}
 true // Needed to make the Suppress annotation work for the plugins block
